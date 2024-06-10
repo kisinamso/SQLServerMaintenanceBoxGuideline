@@ -50,3 +50,25 @@ Name: BackupLog
 ||
 |------|
 |SELECT * FROM [ENTER_DB_NAME].[dbo].[BackupLog] WITH(NOLOCK)|
+
+### Scenario 3
+**I just want to *[XX]* database differantial backup. So i can execute like this:**
+|Method 1|
+|------|
+|EXEC [ENTER_DB_NAME].[dbo].[BackupDatabase] @dbName = 'XX', @backupType = 'diff', @backupPath = 'C:\Backup'|
+
+**Let's control them.**
+||
+|------|
+|SELECT * FROM [ENTER_DB_NAME].[dbo].[BackupLog] WITH(NOLOCK) WHERE DatabaseName = 'XX'|
+
+### Scenario 4
+**I just want to *[XX]* database log backup. So i can execute like this:**
+|Method 1|
+|------|
+|EXEC [ENTER_DB_NAME].[dbo].[BackupDatabase] @dbName = 'XX', @backupType = 'trn', @backupPath = 'C:\Backup'|
+
+**Let's control them.**
+||
+|------|
+|SELECT * FROM [ENTER_DB_NAME].[dbo].[BackupLog] WITH(NOLOCK) WHERE DatabaseName = 'XX'|
