@@ -39,3 +39,14 @@ Name: BackupLog
 ||
 |------|
 |SELECT * FROM [ENTER_DB_NAME].[dbo].[BackupLog] WITH(NOLOCK) WHERE DatabaseName = 'XX'|
+
+### Scenario 2
+**I just want to all database full backup. So i can execute like this:**
+|Method 1| Method 2|
+|------|------|
+|EXEC [ENTER_DB_NAME].[dbo].[BackupDatabase]  @backupType = 'full', @backupPath = 'C:\Backup'|EXEC [ENTER_DB_NAME].[dbo].[BackupDatabase] @backupPath = 'C:\Backup'|
+
+**Let's control them.**
+||
+|------|
+|SELECT * FROM [ENTER_DB_NAME].[dbo].[BackupLog] WITH(NOLOCK)|
