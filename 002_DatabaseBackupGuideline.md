@@ -10,4 +10,4 @@
 Has three parameter. These are Database Name, Backup Type and Backup Path. These two optional but one of them mandatory.
 1. If you will not set to database name, backup operations works for all databases.
 2. If you will not set to backup type, backup type is full backup.
-3. Last one is mandatory parameter and you must set backup path but it must not end with \ operator.
+3. Last one is mandatory parameter and you must set backup path but it must not end with "* \ *"operator.
