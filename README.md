@@ -4,7 +4,7 @@ This repository contains various T-SQL stored procedures guidelines that can be 
 
 ## Contents
 
-1. [Index Maintenance Guideline](0001_IndexMaintenanceGuideline.md)
+1. [Index Maintenance Guideline](001_IndexMaintenanceGuideline.md)
 2. [Databases Backup Guideline](002_DatabaseBackupGuideline.md)
 3. [Statistics Update Maintenance Guideline](003_StatisticsMaintenanceGuideline.md)
 4. [Shrink All Databases Log Files Guideline](004_ShrinkAllLogFiles.md)
