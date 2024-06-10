@@ -1,3 +1,3 @@
-## Database Integrity Check Guideline
+## Index Maintenance Guideline
 
 The content is being edited.
