@@ -26,3 +26,16 @@ Name: BackupLog
 |BackupPath|NVARCHAR(256)|Backup Path like 'C\Backup'|
 |BackupFileName|NVARCHAR(256)|Database Backup Name|
 |BackupDateTime|DATETIME|Backup Date Time|
+
+## Examples
+
+### Scenario 1
+**I just want to *[XX]* database full backup. So i can execute like this:**
+|Method 1| Method 2|
+|------|------|
+|EXEC [ENTER_DB_NAME].[dbo].[BackupDatabase] @dbName = 'XX', @backupType = 'full', @backupPath = 'C:\Backup'|EXEC [ENTER_DB_NAME].[dbo].[BackupDatabase] @dbName = 'XX', @backupPath = 'C:\Backup'|
+
+**Let's control them.**
+||
+|------|
+|SELECT * FROM [ENTER_DB_NAME].[dbo].[BackupLog] WITH(NOLOCK) WHERE DatabaseName = 'XX'|
