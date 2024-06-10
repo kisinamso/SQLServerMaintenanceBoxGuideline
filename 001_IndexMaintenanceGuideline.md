@@ -28,7 +28,7 @@ Name: IndexMaintenanceResults
 
 ## Examples
 
-# Scenario 1
+### Scenario 1
 **I just want to *[XX]* database index maintenance. So i can execute like this:**
 ||
 |------|
@@ -39,7 +39,7 @@ Name: IndexMaintenanceResults
 |------|
 |SELECT * FROM [ENTER_DB_NAME].[dbo].[IndexMaintenanceResults] WITH(NOLOCK) WHERE DatabaseName = 'XX'|
 
-# Scenario 2
+### Scenario 2
 **I just want to all databases index maintenance. So i can execute like this:**
 ||
 |------|
