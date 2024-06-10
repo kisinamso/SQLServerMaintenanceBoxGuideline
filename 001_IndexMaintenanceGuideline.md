@@ -40,3 +40,5 @@ EXEC [ENTER_DB_NAME].[dbo].[PerformIndexMaintenance] \
 -- Let's control them.\
 SELECT * FROM [ENTER_DB_NAME].[dbo].[IndexMaintenanceResults] WITH(NOLOCK)
 
+## Access The Stored Procedures
+I know you wonder about this stored procedure :) Do not worry you can access with free. Click **[here]**(https://github.com/kisinamso/SQLServerMaintenanceBox/blob/main/001_IndexMaintenance.sql).
