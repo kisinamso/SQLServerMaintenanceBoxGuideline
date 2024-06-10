@@ -39,6 +39,7 @@ SELECT * FROM [ENTER_DB_NAME].[dbo].[IndexMaintenanceResults] WITH(NOLOCK) WHERE
 ||
 |------|
 |EXEC [ENTER_DB_NAME].[dbo].[PerformIndexMaintenance]|
+
 **Let's control them.**
 ||
 |------|
