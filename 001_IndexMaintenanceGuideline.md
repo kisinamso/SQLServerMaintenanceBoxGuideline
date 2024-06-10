@@ -42,7 +42,7 @@ SELECT * FROM [ENTER_DB_NAME].[dbo].[IndexMaintenanceResults] WITH(NOLOCK)
 
 ## Tips
 1. You can create SQL Agent Job for Index maintenance. All you have to do is define this stored procedure in your SQL Agent Job step.
-2. This stored procedure works with ONLINE = ON parameter if you do not want to this parameter you can comment out th related lines. For find related lines you can use CTRL + F shortkey with this keywords; 'WITH ONLINE =ON'
+2. This stored procedure works with **ONLINE = ON** parameter if you do not want to this parameter you can comment out th related lines. For find related lines you can use **CTRL + F** shortkey with this keywords; '**WITH ONLINE =ON**'
 3. If you do not want to log records over a certain period of time, you can delete the records in the  **[ENTER_DB_NAME].[dbo].[PerformIndexMaintenance]** table by adding the second step to the SQL Agent Job you have created. Like this:\
    \
    DECLARE @Retention INT = -30 DELETE FROM [ENTER_DB_NAME].[dbo].[PerformIndexMaintenance] WHERE ExecutionDate < DATEADD(DAY,@Retention, GETDATE())
