@@ -27,6 +27,15 @@ Name: BackupLog
 |BackupFileName|NVARCHAR(256)|Database Backup Name|
 |BackupDateTime|DATETIME|Backup Date Time|
 
+## Tips
+1. This backup plan prepared for 3 different time sequences. Time sequences are daily, monthly and yearly. You can change your backup plan.
+2. You can create SQL Agent Job for databases backup. All you have to do is define this stored procedure in your SQL Agent Job step.
+3. This stored procedure works without backup parameters if you want to add parameters you can add the related lines. For find related lines you can use **CTRL + F** shortkey with this keywords; '**-- WITH --You can add parameter to here**'
+4. If you do not want to log records over a certain period of time, you can delete the records in the  **[ENTER_DB_NAME].[dbo].[BackupLog]** table by adding the second step to the SQL Agent Job you have created. Like this:\
+   |***Second Step***|
+   |------|
+   |DECLARE @Retention INT = -30 DELETE FROM [ENTER_DB_NAME].[dbo].[BackupLog] WHERE BackupDateTime < DATEADD(DAY,@Retention, GETDATE())|
+   
 ## Examples
 
 ### Scenario 1
@@ -72,3 +81,7 @@ Name: BackupLog
 ||
 |------|
 |SELECT * FROM [ENTER_DB_NAME].[dbo].[BackupLog] WITH(NOLOCK) WHERE DatabaseName = 'XX'|
+
+## Access The Stored Procedures
+I know you wonder about this stored procedure :) Do not worry you can access with free. Click **[here](https://github.com/kisinamso/SQLServerMaintenanceBox/blob/main/002_DatabaseBackup.sql)** for access.
+
