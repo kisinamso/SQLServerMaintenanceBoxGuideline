@@ -34,8 +34,8 @@ EXEC [ENTER_DB_NAME].[dbo].[PerformIndexMaintenance] 'XX'\
 SELECT * FROM [ENTER_DB_NAME].[dbo].[IndexMaintenanceResults] WITH(NOLOCK) WHERE DatabaseName = 'XX'\
 
 # Scenario 2
--- I just want to all databases index maintenance. So i can execute like this:
-EXEC [ENTER_DB_NAME].[dbo].[PerformIndexMaintenance] 
--- Let's control them.
-SELECT * FROM [ENTER_DB_NAME].[dbo].[IndexMaintenanceResults] WITH(NOLOCK) 
+-- I just want to all databases index maintenance. So i can execute like this:\
+EXEC [ENTER_DB_NAME].[dbo].[PerformIndexMaintenance] \
+-- Let's control them.\
+SELECT * FROM [ENTER_DB_NAME].[dbo].[IndexMaintenanceResults] WITH(NOLOCK) \
 
