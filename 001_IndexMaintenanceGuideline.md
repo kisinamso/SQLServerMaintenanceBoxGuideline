@@ -23,7 +23,8 @@ Name: IndexMaintenanceResults
 |IndexName|SYSNAME|The name of the index that performs index maintenance.|
 |FragmentationPercent|FLOAT|The fragmentation Percent of the index that performs index maintenance.|
 |MaintenanceCommand|NVARCHAR(MAX)|Index reorganize or rebuild script.|
-|ExecutionDate|DATETIME|Execution time of the index that performs index maintenance.|
+|ExecutionDate|DATETIME|Execution time of the index maintenance.|
+|ExecutionResult|NVARCHAR(MAX)|Execution result of index maintenance.|
 
 ## Examples
 
