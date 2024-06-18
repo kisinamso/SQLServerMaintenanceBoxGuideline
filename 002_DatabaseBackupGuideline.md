@@ -34,7 +34,7 @@ Name: BackupLog
 4. If you do not want to log records over a certain period of time, you can delete the records in the  **[ENTER_DB_NAME].[dbo].[BackupLog]** table by adding the second step to the SQL Agent Job you have created. Like this:\
    |***Second Step***|
    |------|
-   |DECLARE @Retention INT = -30 DELETE FROM [ENTER_DB_NAME].[dbo].[BackupLog] WHERE BackupDateTime < DATEADD(DAY,@Retention, GETDATE())|
+   |DECLARE @Retention INT = -30/ DELETE FROM [ENTER_DB_NAME].[dbo].[BackupLog] WHERE BackupDateTime < DATEADD(DAY,@Retention, GETDATE())|
    
 ## Examples
 
