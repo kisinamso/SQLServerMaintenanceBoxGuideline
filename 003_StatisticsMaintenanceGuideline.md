@@ -1,5 +1,5 @@
 
-# 📄 StatisticsM aintenance Guideline Documentation  
+# 📄 Statistics Maintenance Guideline Documentation  
 > **Author:** `@kisinamso`  
 > **Purpose:** Automatically update table statistics and log the process.
 
