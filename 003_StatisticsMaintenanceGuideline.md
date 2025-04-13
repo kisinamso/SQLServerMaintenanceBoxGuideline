@@ -71,3 +71,5 @@ Each update is logged into the `StatisticsUpdateLog` table.
 ## 🔑 Access The Stored Procedures
 
 I know you wonder about this stored procedure :) Do not worry you can access with free. Click **[here](https://github.com/kisinamso/SQLServerMaintenanceBox/blob/main/003_StatisticsMaintenance.sql)** for access.
+
+---
